@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>周杰伦资料卡</title>
+        <style type="text/css">
+                *{
+                        margin: 0;
+                        padding: 0;
+                }
+                .box{
+                        width: 900px;
+                        height: 600px;
+                        margin: 30px auto;
+                }
+                .a1{
+                        background:  url("img/1.jpg") no-repeat left center ;
+                }
+                .a1:hover{
+                       animation: ani_a1 infinite 3s linear normal;
+                }
+                @keyframes ani_a1 {
+                        0%{}
+                        25%{
+                                background-position: 10px center;
+                        }
+                        50%{
+                                background-position: 20px center;
+                        }
+                        75%{
+                                background-position: 30px center;
+                        }
+                        100%{
+                                background-position: 40px center;
+                        }
+                }
+                
+                .info_a1{
+                        transform: translateX(300px);
+                        transition: all 3s;
+                }
+                .info_a2{
+                        transform: translateX(300px);
+                        transition: all 1s;
+                }
+                .info_a3{
+                        transform: translateX(-300px);
+                        transition: all 2s;
+                }
+
+
+                .color_a1:hover,.color_a2:hover,.color_b1:hover,.color_c3:hover,.color_c2:hover,.color_c1:hover{
+                        display: block;
+                        animation: ani_color 3s infinite linear normal ;
+                }
+                @keyframes ani_color {
+                        0%{
+                                background: blue;
+                                opacity: 0.2;
+                        }
+                        25%{
+                                background: purple;
+                                opacity: 0.3;
+                        }
+                        75%{
+                                background: red;
+                                opacity: 0.4;
+                        }
+                        100%{
+                                background: gray;
+                                opacity: 0.5;
+                        }
+                }
+                
+                
+                .color_a1:hover .info_a1,.color_a1:hover .info_a2,.color_a1:hover .info_a3,.color_a2:hover .info_a4,.color_a2:hover .info_a5,.color_a2:hover .info_a6{
+                        transform: translateX(0);
+                }
+                .color_a1:hover .jaysname,.color_a2:hover .jaysname{
+                        transform: translateX(20px);
+                }
+                
+                
+               .a2{
+                       background: url("img/2.jpg") no-repeat center center;
+               }
+                .a2:hover{
+                        animation: ani_a2 infinite 3s linear normal;
+                }
+                @keyframes ani_a2 {
+                        0%{}
+                        25%{
+                                background-position: 10px center;
+                        }
+                        50%{
+                                background-position: 20px center;
+                        }
+                        75%{
+                                background-position: 30px center;
+                        }
+                        100%{
+                                background-position: 40px center;
+                        }
+                }
+                .info_a4{
+                        transform: translateX(-300px);
+                        transition: all 3s;
+                }
+                .info_a5{
+                        transform: translateX(-300px);
+                        transition: all 1s;
+                }
+                .info_a6{
+                        transform: translateX(-300px);
+                        transition: all 2s;
+                }
+                
+                
+                
+                .a3{
+                        background: url("img/3.jpg") no-repeat center center;
+                }
+                .a3:hover{
+                        animation: ani_a3 infinite 3s normal;
+                }
+                @keyframes ani_a3 {
+                        0% {
+                        }
+                        25% {
+                                background-position: -10px center;
+                        }
+                        50% {
+                                background-position: -20px center;
+                        }
+                        75% {
+                                background-position: -30px center;
+                        }
+                        100% {
+                                background-position: -40px center;
+                        }
+                }
+                .a3 .btn{
+                        display: block;
+                        position: absolute;
+                        right: 10px;
+                        top: 10px;
+                        width: 50px;
+                        transition: all 3s;
+                }
+                .a3:hover .btn{
+                        transform: rotate(360deg);
+                }
+                .a3 .jaysname{
+                        transition: all 1s;
+                        transform: translateY(-300px);
+                }
+                .a3:hover .jaysname{
+                        transform: translateY(0);
+                }
+                .a3 .text{
+                        color: white;
+                        font-size: 12px;
+                        font-weight: bold;
+                        margin: 60px 25px;
+                        transition: all 3s;
+                        transform: translateY(500px);
+                }
+                .a3:hover .text{
+                        transform: translateY(0);
+                }
+                
+                
+                
+                .b1{
+                        background:  blue url("img/4.jpg") no-repeat center center;
+                }
+                .b1:hover{
+                        animation: ani_b1 3s infinite ease alternate;
+                }
+                @keyframes ani_b1 {
+                        0%{
+                               background-size: 100% 100%;
+                        }
+                        25%{
+                                background-size: 120% 120%;
+                                background-position: 10px 10px;
+                        }
+                        50%{
+                                background-size: 100% 100%;
+                                background-position: 20px 20px;
+                        }
+                        75%{
+                                background-size: 130% 130%;
+                                background-position: -10px -10px;
+                        }
+                        100%{
+                                background-size: 100% 100%;
+                                background-position: -20px -20px;
+                        }
+                }
+                .b1 .jaysname{
+                        transform: translateY(200px);
+                        transition: all 1s;
+                }
+                .b1:hover .jaysname{
+                        transform: translateY(0);
+                }
+                .b1 p{
+                        color: white;
+                        font-size: 14px;
+                        position: absolute;
+                        right: 5px;
+                        bottom: 40px;
+                        transform: translateY(200px);
+                        transition: all 2s;
+                }
+                .b1 p span{
+                        color: green;
+                        font-weight: bolder;
+                        font-style: oblique;
+                }
+                .b1:hover p{
+                        transform: translateY(0);
+                }
+                
+                
+                .b2{
+                        background: url("img/5.jpg") no-repeat center center;
+                }
+                
+                .b2 .text{
+                        color: white;
+                        font-size: 12px;
+                        margin: 30px 50px;
+                        padding-top: 35px;
+                        position: absolute;
+                        bottom: 30px;
+                        transform: translateY(130px);
+                        transition: all 2s;
+                }
+                .b2 .jaysname{
+                        padding-left: 14px;
+                        transform: translateY(-100px);
+                        transition: all 1s;
+                }
+                .b2:hover .jaysname{
+                        transform: translateY(0);
+                }
+                .b2:hover .text{
+                        transform: translateY(0);
+                }
+                .b2 .square{
+                        border: 3px double white;
+                        width: 75%;
+                        height: 75%;
+                        position: absolute;
+                        left: -172px;
+                        top: -183px;
+                        transition: all 2s;
+                }
+                .b2:hover .square{
+                        transform: rotate(360deg) translate(200px,200px);
+                }
+                
+                
+                
+                .b3{
+                        background: pink;
+                }
+                .b3 .pic{
+                        width: 100%;
+                        height: 100%;
+                        background: url("img/6.jpg") no-repeat center -50px;
+                        background-size: cover;
+                }
+                .b3:hover .pic{
+                        animation: ani_b3 5s infinite linear alternate;
+                }
+                @keyframes ani_b3 {
+                        0%{}
+                        25%{
+                                transform: rotate(180deg) scale(1.2);
+                        }
+                        50%{
+                                transform: rotate(-270deg) scale(1.5);
+                        }
+                        75%{
+                                transform: rotate(360deg) scale(1.2);
+                        }
+                        100%{
+                                transform: rotate(-180deg) scale(1);
+                        }
+                }
+                
+                
+                
+                .c1 {
+                        background: url("img/7.jpg") no-repeat center center;
+                }
+                .c2{
+                        background: url("img/8.jpg") no-repeat center top;
+                }
+                .c3{
+                        background: url("img/9.jpg") no-repeat center center;
+                }
+                
+                .image{
+                        width: 33.3%;
+                        height: 33.3%;
+                        float: left;
+                        background-size: cover;
+                        position: relative;
+                        overflow: hidden;
+                }
+                .colorbox{
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+                        overflow: hidden;
+                }
+                .jaysname{
+                        transition: all 3s;
+                        color: white;
+                        font-size: 18px;
+                        font-weight: bolder;
+                        position: absolute;
+                        left: 30px;
+                        top: 30px;
+                }
+                .infobox1{
+                        position: absolute;
+                        top: 50px;
+                        left: 40px;
+                }
+                .infobox2{
+                        position: absolute;
+                        top: 50px;
+                        left: 20px;
+                }
+                .info{
+                        color: white;
+                        font-size: 14px;
+                        font-weight: bold;
+                        display: block;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                }
+        </style>
+</head>
+<body>
+        <div class="box">
+                <div class="image a1">
+                        <div class="colorbox color_a1">
+                                <span class="jaysname">周杰伦（Jay Chou）</span>
+                                <div class="infobox1">
+                                        <span class="info info_a1">中国台湾流行音乐男歌手</span>
+                                        <span class="info info_a2">2000年发行首张专辑《JAY》</span>
+                                        <span class="info info_a3">2001年发行专辑《范特西》</span>
+                                </div>
+                        </div>
+                </div>
+                <div class="image a2">
+                        <div class="colorbox color_a2">
+                                <span class="jaysname">周杰伦（Jay Chou）</span>
+                                <div class="infobox2">
+                                        <span class="info info_a4">2002年举行“The One”世界巡回演唱会</span>
+                                        <span class="info info_a5">2003年称为美国《时代周刊》封面封面人物</span>
+                                        <span class="info info_a6">2004年获取世界音乐大奖</span>
+                                </div>
+                        </div>
+                </div>
+                <div class="image a3">
+                        <img class="btn" src="img/musicBtn.png" />
+                        <span class="jaysname">周杰伦（Jay Chou）</span>
+                        <div class="text">
+                                2001年发行的专辑《范特西》奠定其融合中西方音乐的风格。2002年举行“The One”世界巡回演唱会 。2003年成为美国《时代周刊》封面人物 。2004年获得世界音乐大奖中国区最畅销艺人奖。2005年凭借动作片《头文字D》获得台湾电影金马奖、香港电影金像奖最佳新人奖。2006年起连续三年获得世界音乐大奖中国区最畅销艺人奖。
+                        </div>
+                </div>
+                <div class="image b1">
+                        <div class="colorbox color_b1">
+                                <span class="jaysname">周杰伦（Jay Chou）</span>
+                                <p>2002年举办世界巡回演唱会<span>（2002）</span></p>
+                        </div>
+                </div>
+                <div class="image b2">
+                        <div class="square"></div>
+                        <span class="jaysname">周杰伦（Joy Chou）</span>
+                        <div class="text">
+                                2001年发行的专辑《范特西》奠定其融合中西方音乐的风格。2002年举行“The One”世界巡回演唱会 。
+                        </div>
+                </div>
+                <div class="image b3">
+                        <div class="pic"></div>
+                </div>
+                <div class="image c1">
+                        <div class="colorbox color_c1"></div>
+                </div>
+                <div class="image c2">
+                        <div class="colorbox color_c2"></div>
+                </div>
+                <div class="image c3">
+                        <div class="colorbox color_c3"></div>
+                </div>
+        </div>
+</body>
+</html>
