@@ -1,0 +1,157 @@
+*{
+        margin: 0;
+        padding: 0;
+}
+
+ul,li{
+        list-style: none;
+}
+
+.head,.header,.content,.banner,.foot,.footer{
+        width: 1000px;
+        margin: 0 auto;
+}
+
+.header{
+        height: 100px;
+}
+
+.header .logo{
+        float: left;
+        margin-top: 35px;
+}
+
+.header form{
+        float: right;
+        width: 220px;
+        height: 25px;
+        border: 1px solid gray;
+        background: #EFEFEF;
+        margin: 35px 20px;
+}
+
+.header input[type="text"]{
+        border: none;
+        float: left;
+        width: 175px;
+        height: 25px;
+        background: none;
+        padding-left: 10px;
+        font-size: 12px;
+        color: gray;
+}
+
+.header input[type="submit"]{
+        border: none;
+        float: right;
+        width: 25px;
+        height: 25px;
+        background: url("../img/button.jpg") no-repeat;
+}
+
+.head{
+        height: 60px;
+        background: #333333;
+}
+
+.head .nav{
+        width: 960px;
+        height: 60px;
+        margin: 0 auto;
+}
+
+.nav li{
+        width: 119px;
+        float: left;
+        text-align: center;
+        line-height: 60px;
+        border-right: 1px solid gray;
+}
+
+.nav li:last-child{
+        border: none;
+}
+
+.nav li a{
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+        display: block;
+        width: 100%;
+        height: 100%;
+}
+
+.nav li:hover{
+        background: red;
+}
+
+.banner{
+        height: 460px;
+        background: url("../img/banner.jpg") no-repeat center center;
+}
+
+.content .con-top{
+        height: 240px;
+        background: gray;
+}
+
+.con-top .top-left,.con-top .top-center,.con-top .top-right{
+        height: 100%;
+        float: left;
+}
+
+.top-left{
+        width: 50%;
+        background: blue;
+}
+
+.top-center{
+        width: 240px;
+        background: yellow;
+}
+
+.top-right{
+        width: 260px;
+        background: purple;
+}
+
+.content .con-bottom{
+        height: 310px;
+        width: 950px;
+        padding: 0 25px;
+        background: aqua;
+}
+
+.con-bottom h3{
+        height: 60px;
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 70px;
+}
+
+.con-bottom li{
+        width: 200px;
+        height: 200px;
+        float: left;
+        margin: 0 25px;
+}
+
+.con-bottom li img{
+        width: 100%;
+        height: 135px;
+}
+
+.con-bottom li p{
+        font-size: 12px;
+        line-height: 30px;
+        height: 65px;
+        overflow: hidden;
+}
+
+.con-bottom li:first-child{
+        margin-left: 0;
+}
+
+.con-bottom li:last-child{
+        margin-right: 0;
+}

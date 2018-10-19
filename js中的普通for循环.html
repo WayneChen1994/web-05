@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>js中的普通for循环</title>
+        <style type="text/css">
+                div{
+                        width: 900px;
+                        height: 1200px;
+                        background: #F5F5F5;
+                        border: 10px double dodgerblue;
+                        margin: 0 auto;
+                }
+                img{
+                        display: block;
+                        float: left;
+                        width: 300px;
+                        height: 300px;
+                }
+        </style>
+</head>
+<body>
+        js中的普通for循环
+        语法：
+        for(初始化表达式;条件表达式;循环之后的操作表达式){
+                循环体;
+        }
+        执行：先执行初始化表达式，然后执行条件语句若条件成立，则执行循环体，循环体执行结束之后，则执行操作表达式，执行完操作表达式，执行条件语句，条件成立，则如此循环往复。若条件不成立，则退出循环。
+        注意：初始化表达式，只执行一次。
+        for (;;){
+                死循环
+        }
+        三个语句可以省略，但是分号不能省。
+--------------------------------------------------------------------------------------
+        增强for循环
+        语法：
+        for (变量 in 数组){
+                循环体
+        }
+        使用增强for循环遍历的时候，取出来的是数组下标，若要获取数组中的数据，则需要通过数组的下标获取即可。
+        
+        <script type="text/javascript">
+                // var arr = ["hello", "good", "nice", "great"]
+                // for (var i in arr){
+                //         console.log(arr[i]);
+                //         document.write("<h2>"+arr[i]+"<h2>");
+                //         document.write('<img src="img/'+ ++i +'.jpg" />')
+                // }
+                
+                // 1+2+3+……+100
+                var res = 0;
+                for (var i=1;i<=100;i++){
+                        res += i;
+                }
+                console.log(res);
+                document.write('<div>');
+                // 使用for循环将十张图片加载到页面中
+                for (var i=1;i<=10;i++){
+                        document.write('<img src="img/'+i+'.jpg" />');
+                }
+                document.write('</div>')
+        </script>
+</body>
+</html>

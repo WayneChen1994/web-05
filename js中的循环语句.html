@@ -5,6 +5,54 @@
         <title>js中的循环语句</title>
 </head>
 <body>
-
+        js中的while循环
+        语法：
+        while (判断语句){
+                语句块;
+        }
+        执行：当判断语句成立的时候，则执行语句块，循环往复，直到判断语句不成立，则跳出循环。
+------------------------------------------------------------------------------------        
+        do-while语法：
+        do{
+                语句块;
+        }while (判断条件)
+        执行：先执行do下面的语句块，然后执行while中的判断条件，若条件成立，则继续执行do下面的语句块，若条件不成立，则退出循环。
+        与while语句不同在于，do-while无论条件是否成立，都会执行一次语句块。
+--------------------------------------------------------------------------------------
+        
+        
+        <script type="text/javascript">
+                // 需求：1!!+2!+……+n!
+               var num = 1;
+               var sum = 0;
+               var res = 1;
+               while (num<=5){
+                       res *= num;
+                       sum += res;
+                       num++;
+               }
+                console.log(sum);
+                
+                
+                var a = 10;
+                while (a>10){
+                        console.log(a);
+                        a--;
+                } 
+                
+                do{
+                        console.log(a);
+                        a--;
+                }while (a>10);
+                
+                
+                 var num = 1;
+                 var res = 0;
+                 while (num<=100){
+                         res += num;
+                         num++;
+                 }
+                 console.log(res);
+        </script>
 </body>
 </html>
