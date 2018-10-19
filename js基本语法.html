@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>js基本语法</title>
+</head>
+<body>
+        总结：
+        在js中的赋值：
+        1、直接赋值
+        var a = 10;
+        2、先声明，后赋值
+        var a; a = 10;
+        3、多个变量同时赋值，var只需要写一次，变量与变量之间使用“,”隔开
+        var a = 10, b = 20;
+        注意：每条语句使用分号结束
+        
+        命名规范：
+        1、变量名可以是数字、字母、下划线，$
+        2、不能以数字开头
+        3、不能使用关键字
+        4、区分大小写，不建议使用大小写来区分变量
+        5、驼峰式命名
+        6、尽量见名知意
+        
+        js中的数据类型：
+        一般类型：布尔类型，number类型，String类型，Object类型，Array类型，Function函数类型，正则
+        特殊类型：
+        null：空值
+        undefined：未定义
+        NaN：not a number，不是一个数字
+        注意：NaN ! = NaN，因为NaN是一个范围，并不是一个确定的值
+        
+        注意：使用“==”，内部会进行隐式类型转换，转换类型之后，再进行比较。
+        使用“===”【全等于】，它不会进行隐式类型转换。
+        
+        typeof 变量名;     // 查看变量类型
+        alert()                 // 弹框提示
+        console.log()       // 打印log
+        document.write("12")    // 将变量写入到页面中
+        <script type="text/javascript">
+                console.log("a"/10);
+                console.log(NaN == NaN);
+                console.log(null == null);
+                console.log(null == undefined);
+                console.log(null === undefined);
+                console.log(1 == "1");
+                console.log(1 === "1");
+                console.log(1+"1");
+                var n = null;
+                console.log(typeof n)
+                document.write("<h1>12</h1>>");
+                // alert(typeof age);
+                // 直接赋值
+                var name = "丽丽";
+                
+                // 先声明，后赋值
+                var age;
+                console.log(typeof age);
+                age = 18;
+                
+                // 同时定义多个变量
+                var num1 = 10, num2 = 20;
+                
+                var a;
+                a = 10;
+                // alert(typeof a);
+                a = "10";
+                // alert(typeof a)
+                
+                // alert(name);
+        </script>
+</body>
+</html>

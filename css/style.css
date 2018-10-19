@@ -1,0 +1,50 @@
+*{
+        margin: 0;
+        padding: 0;
+}
+html,body,.box{
+        width: 100%;
+}
+body{
+        animation: colorchange 3s infinite alternate;
+}
+@keyframes colorchange {
+        from{
+                background: palegoldenrod;
+        }
+        20%{
+                background: red;
+        }
+        40%{
+                background: paleturquoise;
+        }
+        60%{
+                background: palevioletred;
+        }
+        80%{
+                background:peru;
+        }
+        100%{
+                background: purple;
+        }
+}
+.box .imgbox{
+        width: 33.3%;
+        float: left;
+        height: 350px;
+        overflow: hidden;
+}
+.imgbox img{
+        width: 120%;
+        height: 100%;
+        transition: all 1s;
+}
+.imgbox:hover img{
+        opacity: 0.7;
+}
+.img1:hover img{
+        transform: translateX(50px);
+}
+.img2:hover img{
+        transform: translateX(-50px);
+}

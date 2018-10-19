@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>js中的语句</title>
+</head>
+<body>
+        js中的if语句：
+        语法：
+        
+        单分支
+        if(判断语句){
+                语句块;
+        }
+        
+        双分支
+        if(判断语句){
+                语句块1;
+        }else{
+                语句块2;
+        }
+        
+        多分支
+        if(判断条件1){
+                语句块1;
+        }else if(判断条件2){
+                语句块2;
+        }else if(判断条件3){
+                语句块3;
+        }……else{
+                语句块e;
+        }
+-----------------------------------------------------------------------------------------
+        switch语句的语法：
+        switch(变量){
+                case 值1:
+                        语句块;
+                        break;
+                case 值2:
+                        语句块2;
+                        break;
+                ……
+                default:
+                        语句块d;
+                        break;
+        }
+        
+        switch语句适用精准匹配的并且存在多个分支，若比较的是范围，我们还是使用if语句，并且使用switch语句的时候需要注意，我们一定要记得在case语句的结束添加break。
+        
+        <script type="text/javascript">
+                var month = 2;
+                switch (month) {
+                        case 1:
+                        case 3:
+                        case 5:
+                        case 7:
+                        case 8:
+                        case 10:
+                        case 12:
+                                console.log(31);
+                                break;
+                        case 2:
+                                console.log(28);
+                                break;
+                        default:
+                                console.log(30);
+                                break;
+                }
+                
+                
+                
+                
+                var score;
+                score = -1;
+                if (score<60){
+                        console.log("留级")
+                }else if (score>=60 && score<70) {
+                        console.log("及格")
+                }else if(score>=70 && score<80){
+                        console.log("良好")
+                }else if(score>=80 && score<90){
+                        console.log("优秀")
+                }else{
+                        console.log("王者")
+                }
+                
+        </script>
+</body>
+</html>

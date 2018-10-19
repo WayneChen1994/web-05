@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>js简介</title>
+</head>
+<body>
+        html与js的结合方式
+        1、使用script标签，直接在标签内部写js代码【注意这个是不带src】
+        2、使用带src的script标签，在外部的js文件中写js 代码，通过script标签链接进来
+        3、是在标签内部，添加事件，在事件后面写js代码【不建议使用】
+        
+        注释：
+        html中的注释：<!-- 注释 -->
+        css中的注释：/* 注释 */
+        js中的注释：
+        单行注释：// 注释
+        多行注释：/* 注释 */
+        
+        <script type="text/javascript">
+                // 提示
+                alert("提示")
+        </script>
+        <!--js文件的链接地址-->
+        <!--type 文件类型-->
+        <!--charset 文件编码格式 -->
+        <script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+        <button onclick="alert('hello')">按钮</button>
+</body>
+</html>
